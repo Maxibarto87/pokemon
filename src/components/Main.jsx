@@ -1,3 +1,4 @@
+
 import {Pokemon} from '../assets/data/pokemon'
 import styles from '../components/Main.module.css';
 import { Card } from './Card';
@@ -18,7 +19,7 @@ export function Main() {
       <h1>Desafio Pokemon</h1>
       <div className='styles.cardContainer'>
             {typesOfPokemon.map(type =>
-            <Card key={type} data={Pokemon[type]} />
+            <Card key={type}  type={type} data={Pokemon[type]} />
         
 
     )}
